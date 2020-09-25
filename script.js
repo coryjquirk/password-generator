@@ -47,9 +47,9 @@ function generatePassword() {
   if(Length=null){
     window.alert("Please enter your desired password length.");
   }
-  while (Length > 128 || Length < 8) {
-      Length = parseInt(prompt ("Please enter a password length (min 8, max 128)"));
-    }
+  if(Length > 128 || Length < 8) {
+    Length = parseInt(prompt ("Please enter a password length (min 8, max 128)"));
+  }
   var confirmSymbols = confirm("Include special characters?");
   var confirmNumbers = confirm("Include numbers?");
   var confirmUpperCase = confirm("Include upper case letters?");
@@ -85,10 +85,33 @@ function generatePassword() {
     }
   }
 
-
-  for(var i = 0; i < 100; i++) {
-
-  }
+var tempPass1 = '';
+var tempPass2 = '';
+var first = 0;
+var second = 0;
+var character = '';
+//repeats process 100 times
+for (var i = 0; i < 100; i++){
+    Character = '';
+    tempPass1 = '';
+    tempPass2 = '';
+    //first picks a random letter within string
+    first = Math.floor(Math.random() * Length)
+    //second is the new location for letter above
+    second = Math.floor(Math.random() * Length)
+    //character saves the first letter
+    character = passwordArray.charAt(first)
+    //this creates a new string w/o first letter
+    tempPass1 = tempPass1.concat(passwordArray.substring(0, first))
+    tempPass1 = tempPass1.concat(passwordArray.substring(first + 1, Length))
+    //this creates a new string w/ first letter in a random position
+    tempPass2 = tempPass2.concat(tempPass1.substring(0, second))
+    tempPass2 = tempPass2.concat(character)
+    tempPass2 = tempPass2.concat(tempPass1.substring(second, Length))
+    //this saves randomized password to passwordArray
+    passwordArray = tempPass2
+    console.log(tempPass2)
+}
 
 
   return passwordArray;

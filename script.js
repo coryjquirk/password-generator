@@ -43,12 +43,15 @@ var confirmLowerCase;
 
 function generatePassword() {
   //set password length/complexity
+  
   var Length = parseInt(prompt("Enter password length (8 to 128 characters)"));
-  if(Length=null){
-    window.alert("Please enter your desired password length.");
-  }
+  //re-prompt for answer that is >128, <8, or a blank answer
   if(Length > 128 || Length < 8) {
-    Length = parseInt(prompt ("Please enter a password length (min 8, max 128)"));
+    Length = parseInt(prompt ("Password length must be at least 8 and no more than 128 characters."));
+    return generatePassword();
+  }  else if(Length===NaN || Length===false){
+    window.alert("Please enter your desired password length.");
+    return generatePassword();
   }
   var confirmSymbols = confirm("Include special characters?");
   var confirmNumbers = confirm("Include numbers?");
@@ -56,6 +59,7 @@ function generatePassword() {
   var confirmLowerCase = confirm("Include lower case letters?");
   if(confirmSymbols===false&&confirmNumbers===false&&confirmUpperCase===false&&confirmLowerCase===false){
     window.alert("Please select at least one category.");
+    generatePassword();
   }
 
   while (passwordArray.length < Length) {
@@ -121,20 +125,3 @@ for (var i = 0; i < 100; i++){
 
 //for loop that will push through all possible characters according to length selected
   //push final result of password into another array and then print
-
-
-  // Var password = '';
-  // Var length;
-  // Length = (user input shit);
-  // [For loop which runs x times]{
-  // Var rand = random variable;
-  // Var type = rand modulo Y (y is the number of lists, like symbols, letters, uppercase)
-  // If type = (1,2,3...)
-  //     Then 
-  //            Add a character of type 1,2,3...
-  // )
-  // 
-  // Then the adding the character thing would be however you add a character to the blank string you made in the beginning
-  // 
-  // Using the charAt function we discussed
-

@@ -25,8 +25,8 @@ If you fail to select at least one of the character categories, you will be prom
 
 ## Installation
 
-N/A
+N/A - runs right in broswer and is mobile friendly.
 
 ## Credits
 
-Thank you to my classmates, instructors, and TAs in their guidance with writing the Javascript for this project, and to Owen Höglund for assistance through the process of developing the code for the password generation.
+Thank you to Owen Höglund for assistance developing the code for the password generation.

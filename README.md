@@ -7,8 +7,8 @@ This is an application designed to produce a random password consisting of symbo
 ## URL of application: 
 
 * https://coryjquirk.github.io/password-generator/
-
-* screenshot of the deployed application: https://coryjquirk.github.io/password-generator/images/screenshot.png
+### Screenshot
+<img src="https://coryjquirk.github.io/password-generator/images/screenshot.png" alt="application screenshot">
 
 
 ## How to Use

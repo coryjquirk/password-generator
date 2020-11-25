@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an application designed to produce a random password consisting of symbols, numbers, and letters. The result is a secure password that is difficult for humans and computers to guess.
+Produces a random password of symbols, numbers, and/or letters. Aims for a secure password that is difficult for humans and computers to guess.
 
 ## URL of application: 
 

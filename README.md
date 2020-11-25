@@ -2,13 +2,13 @@
 
 ## Description
 
-This is an application designed to produce a random password consisting of symbols, numbers, and letters. The result is a secure password that is difficult for humans and computers to guess.
+Produces a random password of symbols, numbers, and/or letters. Aims for a secure password that is difficult for humans and computers to guess.
 
-## URL of application: 
+## Deployed application: 
 
 * https://coryjquirk.github.io/password-generator/
-
-* screenshot of the deployed application: https://coryjquirk.github.io/password-generator/images/screenshot.png
+### Screenshot
+<img src="https://coryjquirk.github.io/password-generator/images/screenshot.png" alt="application screenshot">
 
 
 ## How to Use
@@ -25,8 +25,8 @@ If you fail to select at least one of the character categories, you will be prom
 
 ## Installation
 
-N/A
+N/A - runs right in broswer and is mobile friendly.
 
 ## Credits
 
-Thank you to my classmates, instructors, and TAs in their guidance with writing the Javascript for this project, and to Owen Höglund for assistance through the process of developing the code for the password generation.
+Thank you to Owen Höglund for assistance developing the code for the password generation.

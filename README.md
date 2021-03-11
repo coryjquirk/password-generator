@@ -3,8 +3,7 @@
 ## Description
 Produces a random password of symbols, numbers, and/or letters. Aims for a secure password that is difficult for humans and computers to guess.
 
-## Deployed application: 
-* https://coryjquirk.github.io/password-generator/
+[Deployed application](https://coryjquirk.github.io/password-generator/)
 
 ### Demo
 <img src="https://coryjquirk.github.io/password-generator/images/demo.gif" alt="application demo">

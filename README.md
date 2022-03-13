@@ -6,7 +6,7 @@ Produces a random password of symbols, numbers, and/or letters. Aims for a secur
 [Deployed application](https://coryjquirk.github.io/password-generator/)
 
 ### Demo
-<img src="https://coryjquirk.github.io/password-generator/images/demo.gif" alt="application demo">
+<img src="images/demo.gif" alt="application demo">
 
 
 ## How to Use
